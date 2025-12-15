@@ -1,0 +1,32 @@
+Subject: Re: Git walkthrough
+
+Hi [Name],
+
+Totally fair—Dropbox works fine and there's no rush to change. But yes, let's do a walkthrough in early January! I've actually already set up a skeleton repo for this project that we can use as a demo: [LINK]
+
+Quick pitch on why Git might be worth learning:
+
+The core idea is simple: instead of Dropbox silently syncing every save, we explicitly decide when to take a "snapshot" of our work (called a "commit"), and we write a short message explaining what we did. Each commit captures the exact state of every file at that moment. We can see line-by-line what changed between any two commits, jump back to any previous state, or compare versions side by side.
+
+So six months from now, we're not staring at "analysis.do" trying to remember what we changed—we have a clear log like:
+- "Added hepatitis analysis"  
+- "Fixed sample restriction bug"
+- "Updated to final dataset"
+
+And if we ever need to, we can recover any of those exact versions.
+
+The other nice thing is that Git separates "working" from "sharing." We each work on our own local copy. When we're ready, we "push" our changes to GitHub, and the other pulls them down. No more worrying about Dropbox syncing a half-finished edit, or accidentally overwriting something. We control when our work becomes visible to others.
+
+We're right that we don't usually work on the same files concurrently, so the merge/conflict features are less relevant. But even for solo work, Git is useful for:
+- Freely experimenting knowing we can always revert
+- Having a clear audit trail of the project's evolution
+- Tagging specific versions (e.g., "submitted version" vs "post-R&R")
+
+The learning curve is smaller than it looks. With GitHub Desktop (a point-and-click app), the daily workflow is just: pull → work → commit → push. No command line needed.
+
+And we'd keep data in Dropbox anyway—Git is just for code. So it's not really either/or.
+
+Happy to do a 30-min walkthrough whenever works in January. Feel free to poke around the repo I linked in the meantime.
+
+Best,
+Jonas
